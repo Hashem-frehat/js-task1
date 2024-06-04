@@ -1,4 +1,41 @@
 
+
+// // ---------------------------------------------------------ex1
+
+let namee = prompt("enter your name");
+let genderr ;
+while(true){
+    let gender = prompt("enter your gender (male/female)");
+    if(gender === "male"){
+        alert("welcome mr "+ namee);
+        genderr = "male";
+        break;
+        
+    }
+    else if(gender === "female"){
+        alert("welcome ms "+ namee);
+        genderr ="female";
+        break;
+    }
+}
+let the_order2;
+if(buying === true){
+    let the_order = prompt("write your order");
+    the_order2=the_order;
+    alert("the order getting prepared");
+    console.log(namee +the_order);
+}
+else if(buying === false){
+    alert("thanks for visit us");
+}
+
+let listt = [namee,genderr,the_order2];
+for(let i =0;i<=listt.length;i++){
+    console.log(listt[i]);
+}
+
+let buying = confirm("do you want to buy coffee or donut");
+
 // // -------------------------------------------------q1
 
 
@@ -13,32 +50,6 @@
 // console.log( "Hello" + 5);
 // console.log( Math.ceil(5) - Math.floor(25) );
 // console.log( Math.pow(44,2));
-
-
-
-// // ---------------------------------------------------------ex1
-
-// let namee = prompt("enter your name");
-// let gender = prompt("enter your gender (male/female)");
-// if(gender === "male"){
-//     alert("welcome mr "+ namee);
-// }
-// else if(gender === "female"){
-//     alert("welcome ms "+ namee);
-// }
-
-// let buying = confirm("do you want to buy coffee or donut");
-
-// if(buying === true){
-//     let the_order = prompt("write your order");
-//     alert("the order getting prepared");
-//     console.log(namee +the_order);
-// }
-// else if(buying === false){
-//     alert("thanks for visit us");
-// }
-
-
 
 
 // // ------------------------------------------------------------------ q2
@@ -74,8 +85,8 @@
 
 // console.log(firstnumber3 + secondnumber3);
 
-// -----------------------------------q6
-// let theswitchnumber = 2;
+// // -----------------------------------q6
+// let theswitchnumber = Number(prompt("enter"));
 // let the_numbbb;
 // switch (theswitchnumber) {
 //     case 1:
