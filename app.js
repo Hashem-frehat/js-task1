@@ -4,6 +4,7 @@
 
 let namee = prompt("enter your name");
 let genderr ;
+function gend(){
 while(true){
     let gender = prompt("enter your gender (male/female)");
     if(gender === "male"){
@@ -17,7 +18,11 @@ while(true){
         genderr ="female";
         break;
     }
+    return gender,genderr;
 }
+}
+gend();
+let buying = confirm("do you want to buy coffee or donut");
 let the_order2;
 if(buying === true){
     let the_order = prompt("write your order");
@@ -34,7 +39,6 @@ for(let i =0;i<=listt.length;i++){
     console.log(listt[i]);
 }
 
-let buying = confirm("do you want to buy coffee or donut");
 
 // // -------------------------------------------------q1
 
