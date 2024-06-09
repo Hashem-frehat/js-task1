@@ -38,6 +38,30 @@ let listt = [namee,genderr,the_order2];
 for(let i =0;i<=listt.length;i++){
     console.log(listt[i]);
 }
+let container = document.getElementById("container");
+let paraq = document.createElement("p");
+let order = document.createElement("ol");
+let  li1 = document.createElement("li");
+let  lii = document.createElement("li");
+// let  liii = document.createElement("li");
+
+paraq.innerHTML = "name :" + namee;
+li1.innerHTML = "gender :"+genderr ;
+        lii.innerHTML = "the order is :" + the_order2;
+        // liii.innerHTML = "Third item";
+
+container.appendChild(paraq);
+container.appendChild(order);
+order.appendChild(li1);
+order.appendChild(lii);
+// order.appendChild(liii);
+
+let hero = document.getElementById("hero");
+let paraqhero =document.createElement("p");
+paraqhero.textContent= "Discover the Perfect Donut Delight! Every Bite is an Unforgettable Experience " 
+hero.appendChild(paraqhero);
+
+
 
 
 // // -------------------------------------------------q1
