@@ -1,65 +1,105 @@
+// -----------------------------------------------------------------ex1
+let form = document.getElementById("myform");
+
+form.addEventListener("submit",function(el){
+el.preventDefault();
+
+
+let username = form.elements['username'].value;
+let age = form.elements['age'].value;
+let gender = form.elements['gender'].value;
+let ordertype = form.elements['order'].value;
+let drinks = form.elements['drink'].value;
+  
+const outputText = `
+User Name: ${username}<br>
+Age: ${age}<br>
+Gender: ${gender}<br>
+Order Type: ${ordertype}<br>
+Favorite rink: ${drinks}
+`;
+
+document.getElementById('output').innerHTML = outputText;
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // // ---------------------------------------------------------ex1
 
-let namee = prompt("enter your name");
-let genderr ;
-function gend(){
-while(true){
-    let gender = prompt("enter your gender (male/female)");
-    if(gender === "male"){
-        alert("welcome mr "+ namee);
-        genderr = "male";
-        break;
+// let namee = prompt("enter your name");
+// let genderr ;
+// function gend(){
+// while(true){
+//     let gender = prompt("enter your gender (male/female)");
+//     if(gender === "male"){
+//         alert("welcome mr "+ namee);
+//         genderr = "male";
+//         break;
         
-    }
-    else if(gender === "female"){
-        alert("welcome ms "+ namee);
-        genderr ="female";
-        break;
-    }
-    return gender,genderr;
-}
-}
-gend();
-let buying = confirm("do you want to buy coffee or donut");
-let the_order2;
-if(buying === true){
-    let the_order = prompt("write your order");
-    the_order2=the_order;
-    alert("the order getting prepared");
-    console.log(namee +the_order);
-}
-else if(buying === false){
-    alert("thanks for visit us");
-}
+//     }
+//     else if(gender === "female"){
+//         alert("welcome ms "+ namee);
+//         genderr ="female";
+//         break;
+//     }
+//     return gender,genderr;
+// }
+// }
+// gend();
+// let buying = confirm("do you want to buy coffee or donut");
+// let the_order2;
+// if(buying === true){
+//     let the_order = prompt("write your order");
+//     the_order2=the_order;
+//     alert("the order getting prepared");
+//     console.log(namee +the_order);
+// }
+// else if(buying === false){
+//     alert("thanks for visit us");
+// }
 
-let listt = [namee,genderr,the_order2];
-for(let i =0;i<=listt.length;i++){
-    console.log(listt[i]);
-}
-let container = document.getElementById("container");
-let paraq = document.createElement("p");
-let order = document.createElement("ol");
-let  li1 = document.createElement("li");
-let  lii = document.createElement("li");
-// let  liii = document.createElement("li");
+// let listt = [namee,genderr,the_order2];
+// for(let i =0;i<=listt.length;i++){
+//     console.log(listt[i]);
+// }
+// let container = document.getElementById("container");
+// let paraq = document.createElement("p");
+// let order = document.createElement("ol");
+// let  li1 = document.createElement("li");
+// let  lii = document.createElement("li");
+// // let  liii = document.createElement("li");
 
-paraq.innerHTML = "name :" + namee;
-li1.innerHTML = "gender :"+genderr ;
-        lii.innerHTML = "the order is :" + the_order2;
-        // liii.innerHTML = "Third item";
+// paraq.innerHTML = "name :" + namee;
+// li1.innerHTML = "gender :"+genderr ;
+//         lii.innerHTML = "the order is :" + the_order2;
+//         // liii.innerHTML = "Third item";
 
-container.appendChild(paraq);
-container.appendChild(order);
-order.appendChild(li1);
-order.appendChild(lii);
-// order.appendChild(liii);
+// container.appendChild(paraq);
+// container.appendChild(order);
+// order.appendChild(li1);
+// order.appendChild(lii);
+// // order.appendChild(liii);
 
-let hero = document.getElementById("hero");
-let paraqhero =document.createElement("p");
-paraqhero.textContent= "Discover the Perfect Donut Delight! Every Bite is an Unforgettable Experience " 
-hero.appendChild(paraqhero);
+// let hero = document.getElementById("hero");
+// let paraqhero =document.createElement("p");
+// paraqhero.textContent= "Discover the Perfect Donut Delight! Every Bite is an Unforgettable Experience " 
+// hero.appendChild(paraqhero);
 
 
 
